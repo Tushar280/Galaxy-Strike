@@ -35,7 +35,7 @@ public class Movement : MonoBehaviour
     private void ProcessRotation()
     {
         Quaternion targetRotation = Quaternion.Euler(movement.y * pitchingFactor,0f,movement.x * -rollingFactor);
-        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, Time.deltaTime * controlSpeed);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, Time.deltaTime * controlSpeed);
 
 
     }
