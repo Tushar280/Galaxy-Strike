@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class Movement : MonoBehaviour
 {
-    private void onMove(InputValue value)
+    private void OnMove(InputValue value)
     {
-        Debug.Log("Movement: " + value.Get<Vector2>());
+        Debug.Log(value.Get<Vector2>());
     }
 }
