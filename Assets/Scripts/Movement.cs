@@ -6,11 +6,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private float controlSpeed = 10f;
     [SerializeField] private float xRange = 10f;
     [SerializeField] private float yRange = 15f;
+    [SerializeField] private float rollingFactor = 5f;
     Vector2 movement;
 
     private void Update()
     {
         ProcessTranslation();
+        ProcessRotation();
     }
 
     private void ProcessTranslation()
@@ -26,6 +28,12 @@ public class Movement : MonoBehaviour
 
 
         transform.localPosition = new Vector3(xFinal,yFinal,0f);
+    }
+
+    private void ProcessRotation()
+    {
+        Quaternion targetRoation = Quaternion.Euler(0f,0f,movement.x * -rollingFactor);
+        transform.localRotation = targetRoation;
     }
 
     private void OnMove(InputValue value)
