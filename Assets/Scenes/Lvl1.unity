@@ -735,7 +735,7 @@ MonoBehaviour:
   controlSpeed: 10
   xRange: 10
   yRange: 8
-  rollingFactor: 8
+  rollingFactor: 15
 --- !u!114 &806328977
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
     private void ProcessRotation()
     {
         Quaternion targetRoation = Quaternion.Euler(0f,0f,movement.x * -rollingFactor);
-        transform.localRotation = targetRoation;
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRoation, Time.deltaTime * controlSpeed);
     }
 
     private void OnMove(InputValue value)
