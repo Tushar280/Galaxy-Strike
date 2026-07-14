@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private float xRange = 10f;
     [SerializeField] private float yRange = 15f;
     [SerializeField] private float rollingFactor = 5f;
+    [SerializeField] private float pitchingFactor = 5f;
+
     Vector2 movement;
 
     private void Update()
@@ -32,8 +34,10 @@ public class Movement : MonoBehaviour
 
     private void ProcessRotation()
     {
-        Quaternion targetRoation = Quaternion.Euler(0f,0f,movement.x * -rollingFactor);
-        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRoation, Time.deltaTime * controlSpeed);
+        Quaternion targetRotation = Quaternion.Euler(movement.y * pitchingFactor,0f,movement.x * -rollingFactor);
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, Time.deltaTime * controlSpeed);
+
+
     }
 
     private void OnMove(InputValue value)
