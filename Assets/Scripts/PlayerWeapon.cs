@@ -6,7 +6,7 @@ public class PlayerWeapon : MonoBehaviour
     [SerializeField] private ParticleSystem[] lasers;
     [SerializeField] private RectTransform crosshair;
     [SerializeField] private Transform trackingTarget;
-    [SerializeField] private float targetDistance;
+    [SerializeField] private float targetDistance = 10f;
 
     
     bool isFiring = false;
@@ -31,6 +31,7 @@ public class PlayerWeapon : MonoBehaviour
         }
 
         Vector3 targetPosition = new Vector3(Mouse.current.position.x, Mouse.current.position.y,targetDistance);
+        trackingTarget.position = Camera.main.ScreenToWorldPoint(targetPosition);
     }
 
     private void ProcessFire()
