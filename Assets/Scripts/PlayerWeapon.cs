@@ -7,7 +7,12 @@ public class PlayerWeapon : MonoBehaviour
 
     private void OnFire(InputValue value)
     {
-        isFiring = value.isPressed;
+        isFiring = value.isPressed; 
+    }
+
+    private void Update()
+    {
+        ProcessFire();
     }
 
     private void ProcessFire()
