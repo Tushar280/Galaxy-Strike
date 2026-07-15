@@ -6,8 +6,8 @@ public class PlayerWeapon : MonoBehaviour
     [SerializeField] private ParticleSystem[] lasers;
     [SerializeField] private RectTransform crosshair;
     [SerializeField] private Transform trackingTarget;
-    [SerializeField] private float targetDistance = 10f;\
-    
+    [SerializeField] private float targetDistance = 10f;
+
     bool isFiring = false;
 
     private void Start()
