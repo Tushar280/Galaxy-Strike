@@ -8,6 +8,13 @@ public class PlayerWeapon : MonoBehaviour
     private void OnFire(InputValue value)
     {
         isFiring = value.isPressed;
-        Debug.Log("Firing: " + isFiring);
+    }
+
+    private void ProcessFire()
+    {
+        if (isFiring)
+        {
+            Debug.Log("Firing");
+        }
     }
 }
