@@ -1084,6 +1084,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1372622160}
     - target: {fileID: 6788892094536550442, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: targetDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788892094536550442, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: trackingTarget
+      value: 
+      objectReference: {fileID: 1699086078}
+    - target: {fileID: 6788892094536550442, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
       propertyPath: lasers.Array.size
       value: 2
       objectReference: {fileID: 0}
