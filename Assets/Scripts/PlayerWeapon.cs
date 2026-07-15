@@ -9,6 +9,11 @@ public class PlayerWeapon : MonoBehaviour
     
     bool isFiring = false;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     private void OnFire(InputValue value)
     {
         isFiring = value.isPressed; 
@@ -18,7 +23,10 @@ public class PlayerWeapon : MonoBehaviour
     {
         ProcessFire();
 
-        crosshair.position = Input.mousePosition;
+        if (Mouse.current != null)
+        {
+            crosshair.position = Mouse.current.position.ReadValue();
+        }
     }
 
     private void ProcessFire()
