@@ -17,6 +17,8 @@ public class PlayerWeapon : MonoBehaviour
     private void Update()
     {
         ProcessFire();
+
+        crosshair.position = Input.mousePosition;
     }
 
     private void ProcessFire()
