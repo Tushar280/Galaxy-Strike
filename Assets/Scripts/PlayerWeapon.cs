@@ -3,6 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerWeapon : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem lazer;
+    [SerializeField] private ParticleSystem lazer1;
+
+    
     bool isFiring = false;
 
     private void OnFire(InputValue value)
@@ -19,7 +23,13 @@ public class PlayerWeapon : MonoBehaviour
     {
         if (isFiring)
         {
-            Debug.Log("Firing");
+            lazer.Play();
+            lazer1.Play();
+        }
+        else
+        {
+            lazer.Stop();
+            lazer1.Stop();
         }
     }
 }
