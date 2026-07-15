@@ -20,16 +20,11 @@ public class PlayerWeapon : MonoBehaviour
     }
 
     private void ProcessFire()
-    {
-        if (isFiring)
-        {
-            lazer.Play();
-            lazer1.Play();
-        }
-        else
-        {
-            lazer.Stop();
-            lazer1.Stop();
-        }
+    { 
+        var emissionModule = lazer.emission;
+        emissionModule.enabled = isFiring;
+        
+        var emissionModule1 = lazer1.emission;
+        emissionModule1.enabled = isFiring;
     }
 }
