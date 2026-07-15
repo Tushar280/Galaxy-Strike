@@ -3,11 +3,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerWeapon : MonoBehaviour
 {
+    bool isFiring = false;
+
     private void OnFire(InputValue value)
     {
-        if(value.isPressed)
-        {
-            Debug.Log("Shoot");
-        }
+        isFiring = value.isPressed;
+        Debug.Log("Firing: " + isFiring);
     }
 }
