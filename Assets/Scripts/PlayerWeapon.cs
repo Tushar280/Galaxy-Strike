@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerWeapon : MonoBehaviour
 {
     [SerializeField] private ParticleSystem[] lasers;
+    [SerializeField] private RectTransform crosshair;
 
     
     bool isFiring = false;
