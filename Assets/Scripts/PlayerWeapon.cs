@@ -28,9 +28,11 @@ public class PlayerWeapon : MonoBehaviour
         {
             TrackMouseTarget();
         }
+
+        RotateLasersToTarget();
     }
 
-    private void RotateToTarget()
+    private void RotateLasersToTarget()
     {
         foreach(ParticleSystem laser in lasers)
         {
