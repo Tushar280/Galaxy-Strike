@@ -1190,6 +1190,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right Lazer
       objectReference: {fileID: 0}
+    - target: {fileID: 729741875944016052, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 729741875944016052, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 729741875944016052, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 729741875944016052, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276252108688480017, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276252108688480017, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276252108688480017, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276252108688480017, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3598353808168923043, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
