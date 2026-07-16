@@ -971,6 +971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa15763dc31cbd499dba3be352a5c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
+  exploVfx: {fileID: 2664855807294620258, guid: 9873140d9570cc745ae999ebdffa4f96, type: 3}
 --- !u!198 &1364523089 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2276252108688480017, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
@@ -1276,15 +1277,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4825128353376315812, guid: 27472e5d6ddbb834e82372962278e3dd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 339.7
+      value: 331.58
       objectReference: {fileID: 0}
     - target: {fileID: 4825128353376315812, guid: 27472e5d6ddbb834e82372962278e3dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52.928
+      value: 51.5
       objectReference: {fileID: 0}
     - target: {fileID: 4825128353376315812, guid: 27472e5d6ddbb834e82372962278e3dd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -357.3
+      value: -503.71
       objectReference: {fileID: 0}
     - target: {fileID: 4825128353376315812, guid: 27472e5d6ddbb834e82372962278e3dd, type: 3}
       propertyPath: m_LocalRotation.w
