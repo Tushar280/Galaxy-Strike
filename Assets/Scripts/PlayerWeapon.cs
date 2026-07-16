@@ -26,22 +26,18 @@ public class PlayerWeapon : MonoBehaviour
 
         if (Mouse.current != null)
         {
-            TrackMouse();
-            TrackTarget();
+            TrackMouseTarget();
         }
     }
 
-    private void TrackTarget()
-    {
-        Vector3 targetPosition = new Vector3(mousePosition.x, mousePosition.y, targetDistance);
-        trackingTarget.position = Camera.main.ScreenToWorldPoint(targetPosition);
 
-    }
-
-    private void TrackMouse()
+    private void TrackMouseTarget()
     {
         Vector2 mousePosition = Mouse.current.position.ReadValue();
         crosshair.position = mousePosition;
+
+        Vector3 targetPosition = new Vector3(mousePosition.x, mousePosition.y, targetDistance);
+        trackingTarget.position = Camera.main.ScreenToWorldPoint(targetPosition);
     }
 
     private void ProcessFire()
