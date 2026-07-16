@@ -36,7 +36,7 @@ public class PlayerWeapon : MonoBehaviour
     {
         foreach(ParticleSystem laser in lasers)
         {
-            Vector3 dir = trackingTarget.position - laser.transform.position;
+            Vector3 dir = trackingTarget.position - transform.position;
             Quaternion lookRotation = Quaternion.LookRotation(dir);
             laser.transform.rotation = lookRotation;
 

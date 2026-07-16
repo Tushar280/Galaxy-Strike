@@ -1079,13 +1079,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6271113430136037039, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: rollingFactor
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271113430136037039, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: pitchingFactor
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6788892094536550442, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 1372622160}
     - target: {fileID: 6788892094536550442, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
       propertyPath: targetDistance
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6788892094536550442, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
       propertyPath: trackingTarget
