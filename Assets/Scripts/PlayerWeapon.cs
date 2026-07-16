@@ -32,9 +32,13 @@ public class PlayerWeapon : MonoBehaviour
 
     private void RotateToTarget()
     {
-        Vector3 dir = trackingTarget.position - transform.position;
-        float angle = Vector3.SignedAngle(transform.up, dir, Vector3.forward);
-        transform.Rotate(0, 0, angle);
+        foreach(ParticleSystem laser in lasers)
+        {
+            Vector3 dir = trackingTarget.position - laser.transform.position;
+            Quaternion lookRotation = Quaternion.lookRotation();
+        }
+        
+        
     }
 
 
