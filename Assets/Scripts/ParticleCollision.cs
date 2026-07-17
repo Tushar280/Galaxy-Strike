@@ -4,6 +4,8 @@ public class ParticleCollision : MonoBehaviour
 {
     [SerializeField] private GameObject exploVfx;
     [SerializeField] private int hitPoints = 10;
+    [SerializeField] private int destroyScore = 100;
+    [SerializeField] private int hitScore = 10;
     [SerializeField]private ScoreBoard scoreBoard;
 
     private void Start()
@@ -15,7 +17,7 @@ public class ParticleCollision : MonoBehaviour
     {
         hitPoints --;
         ProcsessHit();
-        scoreBoard.AddScore(1);
+        scoreBoard.AddScore(hitScore);
     }
 
     private void ProcsessHit()
@@ -24,7 +26,7 @@ public class ParticleCollision : MonoBehaviour
 
             Instantiate(exploVfx,transform.position, Quaternion.identity);
             Destroy(gameObject);
-
+            scoreBoard.AddScore(destroyScore);
         }
     }
 }
