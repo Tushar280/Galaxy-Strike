@@ -325,6 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9139610bf298eae4f9fb41a13c876053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreBoard
+  scoreUi: {fileID: 416214004}
 --- !u!4 &199760568
 Transform:
   m_ObjectHideFlags: 0
