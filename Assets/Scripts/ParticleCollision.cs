@@ -8,7 +8,12 @@ public class ParticleCollision : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         hitPoints --;
+        ProcsessHit();
+        
+    }
 
+    private void ProcsessHit()
+    {
         if(hitPoints <= 0){
 
             Instantiate(exploVfx,transform.position, Quaternion.identity);
