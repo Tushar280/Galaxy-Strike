@@ -10,7 +10,7 @@ public class ParticleCollision : MonoBehaviour
 
     private void Start()
     {
-        scoreBoard = FindObjectOfType<ScoreBoard>();
+        scoreBoard = FindFirstObjectByType<ScoreBoard>();
     }
 
     private void OnParticleCollision(GameObject other)
