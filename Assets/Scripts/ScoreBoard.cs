@@ -9,6 +9,7 @@ public class ScoreBoard : MonoBehaviour
     public void AddScore(int amount)
     {
         score = score + amount;
+        scoreUi.text = score.ToString();
         Debug.Log("Your Score : " + score);
     }
 }
