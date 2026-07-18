@@ -121,6 +121,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987db95371e25eb47b33cd8c021967d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParticleCollision
+  exploVfx: {fileID: 0}
+  hitPoints: 20
+  destroyScore: 100
+  hitScore: 10
+  scoreBoard: {fileID: 0}
 --- !u!1001 &8802693520383226191
 PrefabInstance:
   m_ObjectHideFlags: 0
