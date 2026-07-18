@@ -15,18 +15,32 @@ public class ParticleCollision : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        hitPoints --;
-        ProcsessHit();
-        scoreBoard.AddScore(hitScore);
+        hitPoints--;
+        ProcessHit();
+        if (scoreBoard != null)
+        {
+            scoreBoard.AddScore(hitScore);
+        }
+        else
+        {
+            Debug.LogWarning("ScoreBoard is not found in the scene! Cannot add score for hit.", this);
+        }
     }
 
-    private void ProcsessHit()
+    private void ProcessHit()
     {
-        if(hitPoints <= 0){
-
-            Instantiate(exploVfx,transform.position, Quaternion.identity);
+        if (hitPoints <= 0)
+        {
+            Instantiate(exploVfx, transform.position, Quaternion.identity);
             Destroy(gameObject);
-            scoreBoard.AddScore(destroyScore);
+            if (scoreBoard != null)
+            {
+                scoreBoard.AddScore(destroyScore);
+            }
+            else
+            {
+                Debug.LogWarning("ScoreBoard is not found in the scene! Cannot add score for destruction.", this);
+            }
         }
     }
 }
