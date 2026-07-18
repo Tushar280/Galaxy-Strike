@@ -1658,6 +1658,11 @@ Transform:
   - {fileID: 1781440848}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2052576821 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5128402577634997245, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+  m_PrefabInstance: {fileID: 4080087869547647384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4080087869547647384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1703,9 +1708,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3598353808168923043, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598353808168923043, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: m_SceneBindings.Array.data[2].key
+      value: 
+      objectReference: {fileID: -6431054346226821199, guid: 53d8231c7be639d4eaacc9a896013191, type: 2}
+    - target: {fileID: 3598353808168923043, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
       objectReference: {fileID: 512608023}
+    - target: {fileID: 3598353808168923043, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
+      propertyPath: m_SceneBindings.Array.data[2].value
+      value: 
+      objectReference: {fileID: 2052576821}
     - target: {fileID: 3967404716385427646, guid: 82af7d0c3b751ff46b704b98238b1b3a, type: 3}
       propertyPath: m_Name
       value: Left Lazer
