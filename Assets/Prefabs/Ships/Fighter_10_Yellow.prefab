@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParticleCollision
   exploVfx: {fileID: 0}
-  hitPoints: 20
+  hitPoints: 15
   destroyScore: 100
   hitScore: 10
   scoreBoard: {fileID: 0}
