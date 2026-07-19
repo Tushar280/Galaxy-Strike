@@ -6,8 +6,8 @@ public class SceneLoader : MonoBehaviour
 
     public void ReloadScene()
     {
-        int index = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(index);
+        int index = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(index);
     }
     
 
