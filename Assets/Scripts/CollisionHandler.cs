@@ -14,6 +14,7 @@ public class CollisionHandler : MonoBehaviour
     {
         Instantiate(exploVfx,transform.position, Quaternion.identity);
         Destroy(gameObject);
+        
         sceneLoader.ReloadScene();
     }
 }
