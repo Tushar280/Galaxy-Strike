@@ -23,7 +23,7 @@ public class ParticleCollision : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("ScoreBoard is not found in the scene! Cannot add score for hit.", this);
+            Debug.LogWarning("ScoreBoard is not found in the scene!", this);
         }
     }
 
