@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
 
     public void ReloadScene()
     {
-        StartCoroutine(ReloadAfterSec();)
+        StartCoroutine(ReloadAfterSec());
     }
     
     IEnumerator ReloadAfterSec(int time)
