@@ -8,13 +8,14 @@ public class SceneLoader : MonoBehaviour
 
     public void ReloadScene()
     {
-        int index = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(index);
+        StartCoroutine(ReloadAfterSec();)
     }
     
     IEnumerator ReloadAfterSec(int time)
     {
         yield return new WaitForSeconds(reloadTime);
+        int index = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(index);
     }
 
 }
