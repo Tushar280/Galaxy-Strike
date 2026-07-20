@@ -1,8 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class SceneLoader : MonoBehaviour
 {
+    [SerializeField] private int reloadTime = 2;
 
     public void ReloadScene()
     {
@@ -10,6 +12,9 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(index);
     }
     
-
+    IEnumerator ReloadAfterSec(int time)
+    {
+        yield return new WaitForSeconds(reloadTime);
+    }
 
 }
